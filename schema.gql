@@ -1,0 +1,30 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Entity {
+  name: String!
+}
+
+type Query {
+  get(where: WhereEntity): [Entity!]!
+}
+
+input WhereEntity {
+  """Entity name."""
+  name: String
+
+  """All conditions must return true."""
+  AND: WhereEntityFields
+
+  """One or more conditions must return true."""
+  OR: WhereEntityFields
+
+  """All conditions must return false."""
+  NOT: WhereEntityFields
+}
+
+input WhereEntityFields {
+  """Entity name."""
+  name: String
+}
