@@ -1,0 +1,1 @@
+# nestjs-graphql-intersectiontype-bug
